@@ -15,25 +15,29 @@
 
 ## ⚙️ Tech Stack
 
-| Layer      | Tech                       |
-|------------|----------------------------|
-| Frontend   | React, Vite, Tailwind CSS  |
-| Admin      | React, Chart.js, Axios     |
-| Backend    | Node.js, Express, MongoDB  |
-| Auth & API | Firebase Auth, Cloudinary, Stripe |
-| Deployment | Render.com                 |
+| Layer     | Tech                        |
+|-----------|-----------------------------|
+| Frontend  | React, Vite, Tailwind CSS   |
+| Admin     | React, Axios, Chart.js      |
+| Backend   | Node.js, Express, MongoDB   |
+| Auth      | Firebase Authentication     |
+| Database  | MongoDB + Firestore         |
+| Uploads   | Cloudinary                  |
+| Payments  | Stripe                      |
+| Deploy    | Render.com                  |
 
 ---
 
 ## ✨ Features
 
-- 🍕 Browse pure-veg dishes: rolls, desserts, sandwiches, pasta, and more
-- 🔍 Search and filter menu items
-- 🛒 Add to cart and wishlist (Firebase Auth)
-- 🧾 Stripe payment integration
-- 📷 Cloudinary image upload
-- 👩‍🍳 Admin dashboard to manage menu, orders, and analytics
-- 🛡️ Protected routes and real-time Firestore updates
-
+- 🔐 **Firebase Authentication** for secure user login/signup
+- 📦 **Firestore integration** for real-time cart and wishlist storage
+- 🧾 **Stripe payment gateway** integration for test payments
+- 📷 **Cloudinary** support for admin image uploads
+- 🧑‍🍳 **Admin dashboard** to add, edit, or delete menu items
+- 🔎 Search, sort, and filter functionality for end-users
+- 🛒 Persistent **cart and wishlist** synced across sessions
+- ⚡ Built using **Vite + Tailwind CSS** for blazing-fast frontend
+- ☁️ Full deployment on **Render.com**
 
 
