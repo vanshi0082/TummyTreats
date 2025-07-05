@@ -12,9 +12,6 @@
 
 ---
 
-## 📂 Project Structure
-
----
 
 ## ⚙️ Tech Stack
 
