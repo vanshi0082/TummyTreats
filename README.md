@@ -6,8 +6,8 @@
 
 ## 🔗 Live Links
 
-- 🌐 Frontend: [https://frontend-tummytreats.onrender.com](https://frontend-tummytreats.onrender.com)
-- 🛠️ Admin Panel: [https://admin-tummytreats.onrender.com](https://admin-tummytreats.onrender.com)
+- 🌐 Frontend: [https://frontend-tummytreats.onrender.com](https://tummytreats-frontend.onrender.com)
+- 🛠️ Admin Panel: [https://admin-tummytreats.onrender.com](https://tummytreats-admin.onrender.com)
 - ⚙️ Backend API: [https://tummytreats.onrender.com](https://tummytreats.onrender.com)
 
 ---
