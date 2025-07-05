@@ -1,5 +1,7 @@
 import foodModel from "../models/foodModel.js";
 import fs from 'fs'
+import {cloudinary} from '../utils/cloudinary.js';
+
 
 // all food list
 const listFood = async (req, res) => {
@@ -14,26 +16,37 @@ const listFood = async (req, res) => {
 }
 
 // add food
+// add food
 const addFood = async (req, res) => {
-
     try {
-        let image_filename = `${req.file.filename}`
+        // Upload to Cloudinary
+        const result = await cloudinary.uploader.upload(req.file.path);
 
+        // Create food entry in DB
         const food = new foodModel({
             name: req.body.name,
             description: req.body.description,
             price: req.body.price,
-            category:req.body.category,
-            image: image_filename,
-        })
+            category: req.body.category,
+            image: result.secure_url,
+        });
 
         await food.save();
-        res.json({ success: true, message: "Food Added" })
+
+        // ✅ Check if file exists locally before deleting
+        if (req.file && req.file.path && fs.existsSync(req.file.path)) {
+            fs.unlinkSync(req.file.path);
+        }
+
+        res.json({ success: true, message: "Food Added" });
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: "Error" })
+        res.json({ success: false, message: "Error" });
     }
-}
+};
+
+
+
 
 // delete food
 const removeFood = async (req, res) => {
