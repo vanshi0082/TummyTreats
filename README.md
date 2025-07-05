@@ -14,3 +14,29 @@
 
 ## 📂 Project Structure
 
+---
+
+## ⚙️ Tech Stack
+
+| Layer      | Tech                       |
+|------------|----------------------------|
+| Frontend   | React, Vite, Tailwind CSS  |
+| Admin      | React, Chart.js, Axios     |
+| Backend    | Node.js, Express, MongoDB  |
+| Auth & API | Firebase Auth, Cloudinary, Stripe |
+| Deployment | Render.com                 |
+
+---
+
+## ✨ Features
+
+- 🍕 Browse pure-veg dishes: rolls, desserts, sandwiches, pasta, and more
+- 🔍 Search and filter menu items
+- 🛒 Add to cart and wishlist (Firebase Auth)
+- 🧾 Stripe payment integration
+- 📷 Cloudinary image upload
+- 👩‍🍳 Admin dashboard to manage menu, orders, and analytics
+- 🛡️ Protected routes and real-time Firestore updates
+
+
+
